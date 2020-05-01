@@ -1,0 +1,79 @@
+@import '../../themes/sizes.scss';
+@import '../../themes/colors.scss';
+
+.outlineInput {
+
+  .outlineInputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 34px;
+    flex: 1;
+    border: solid 1px #838383;
+    border-radius: 4px;
+
+    &.focus {
+      border: solid 1px #2388E5;
+    }
+
+    label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 4px;
+      margin: 10px;
+      background: white;
+      color: $text-grey;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+      cursor: text;
+
+      &.active {
+        top: -16px;
+        color: $text-dark;
+        font-size: 12px;
+      }
+
+      &.focus {
+        color: #2388E5;
+      }
+    }
+
+    input {
+      flex: 1;
+      height: 18px;
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+  
+    .additionIcon {
+      width: 28px;
+    }
+  }
+
+  &.error {
+    label {
+      &.active, &.focus {
+        color: red;
+      }
+    }
+    
+    .outlineInputContainer {
+      margin-bottom: 4px;
+      border: 1px solid red;
+
+      &.focus {
+        border: 1px solid red;
+      }
+    }
+    
+    .errorText {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "master.menu.title": "GooNote",
+  "master.menu.login": "Login",
+  "master.menu.home": "Home",
+  "home.title": "Welcome",
+  "login.username.label": "Username",
+  "login.password.label": "Password",
+  "login.action.save": "Login",
+  "outlineInput.password.additionIcon.hide.tooltip": "Hide",
+  "outlineInput.password.additionIcon.show.tooltip": "Show",
+  "login.description.paragraph.1": "Login",
+  "login.username.error.required": "Please enter a username.",
+  "login.password.error.required": "Please enter a password.",
+  "login.action.save.error": "Sorry, your username or password is incorrect. Please try again.",
+  "login.title": "GooNote",
+  "login.legend.mandatory": "required"
+}

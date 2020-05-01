@@ -1,0 +1,87 @@
+@import '../../themes/sizes.scss';
+@import '../../themes/colors.scss';
+
+.loginPage {
+
+  .content-card {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .contentTitle {
+      margin-bottom: 16px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .contentDescription {
+      .contentParagraph {
+        margin-bottom: 16px;
+      }
+    }
+
+    .username {
+      margin-bottom: 16px;
+    }
+
+    .password {
+      margin-bottom: 16px;
+    }
+
+    .loginButton {
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 8px;
+    }
+
+    .loginError {
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .contentAction {
+      display: flex;
+      // flex-direction: column;
+      justify-content: flex-end;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .contentButton {
+        flex: 1;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: normal;
+
+        &:not(:first-child) {
+          margin-left: 8px;
+        }
+
+        @media (min-width: 768px) {
+          flex: none;
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .legend {
+      font-size: 12px;
+      
+      & > span {
+        margin-right: 16px;
+      }
+    }
+
+    .errorText {
+      font-size: 14px;
+    }
+
+  }
+  
+}
